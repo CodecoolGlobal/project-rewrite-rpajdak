@@ -65,27 +65,30 @@ def power(x,y):
 
 power(2,10)
 
-def wynik(x,y):
-    a = x // y
-    print("wbudowana fukcja: ",a)
+# def wynik(x,y):
+#     a = x // y
+#     print("wbudowana fukcja: ",a)
 
-wynik(-1, -2)
+# wynik(20, -5)
 
 
-def costam(x,y):
-    counter = 1
-    number = x-y
-    if x == y:
-        counter = 1
-        print(counter)
-    elif x < y:
-        counter = 0
-        print("linia 84 ", counter)
-    else :
-        while number >= y:
-            number = number-y
-            counter += 1 
-            print("tu jest blad")
-    print("linia 90 ", counter)
+# def costam(x,y):
+#     counter = 0
+#     number = x
+#     if x == y:
+#         counter = 1
+#         print(counter)
+#     elif x < y:
+#         number = number + y
+#         while number < y:
+#             number = number+y
+#             counter -= 1
+#     else :
+#         number = number-y
+#         counter = 1
+#         while number >= y:
+#             number = number-y
+#             counter += 1 
+#     print(counter)
 
-costam(-2,-6)
+# costam(20,-2)
