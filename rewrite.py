@@ -50,20 +50,18 @@ multiply(20,4)
 
 def power(x,y):
     suma = x
-    counter = 1
+    counter = 0
     if (y == 0):
         suma = 1
         print(suma)
         return suma
     else:
-        while counter <= y:
-            suma = suma * x
+        while counter < y:
+            suma *= x
             counter +=1
     
     print(suma)    
     return suma
-
-power(2,10)
 
 # def wynik(x,y):
 #     a = x // y
