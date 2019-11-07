@@ -1,5 +1,5 @@
-x = input("Number 1 ")
-y = input("Number 1 ")
+# x = input("Number 1 ")
+# y = input("Number 1 ")
 def min(x,y):
     less = 0
     numbers = [x,y]
@@ -9,7 +9,7 @@ def min(x,y):
         else:
             less = x
     print(less)
-min(x,y)
+# min(x,y)
 
 x = input("Number 1 ")
 y = input("Number 1 ")
@@ -23,7 +23,7 @@ def max(x,y):
         else:
             greater = y
     print(greater)
-max(x,y)
+# max(x,y)
 
 iterable = input(("Podaj stringa: "))
 def len(iterable):
@@ -32,37 +32,50 @@ def len(iterable):
         lenght +=1
     print(lenght)
 
-len(iterable)
+# len(iterable)
 
 x = input("Number #1: ")
 y = input("Number #2: ")   
 
 def multiply(x,y):
     suma = 0
-    counter = 1
-    while counter <= y:
-        suma += x
-        counter +=1
-    print(suma) 
+    
+    if y > 0:
+        counter = 1
+        while counter <= y:
+            suma += x
+            counter +=1
+    else:
+        counter = -1
+        while counter >= y:
+            suma -= x
+            counter -=1
+
+    print("wynik mnożenia: ", suma) 
     return suma
 
-multiply(20,4)
+# multiply(20,-4)
 
 def power(x,y):
     suma = x
     counter = 0
-    if (y == 0):
+    if y == 0:
         suma = 1
         print(suma)
         return suma
-    else:
+    elif y > 0:
         while counter < y:
             suma *= x
             counter +=1
-    
-    print(suma)    
+    elif y < 0:
+        while counter > y:
+            suma = (1/x) * (1/x)
+            counter -=1
+    print("wynik potegowania: ",suma)    
     return suma
+# power(3,-2)
 
+## Extra
 # def wynik(x,y):
 #     a = x // y
 #     print("wbudowana fukcja: ",a)
